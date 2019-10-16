@@ -1,0 +1,24 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+    <style>
+        body{
+            text-decoration-color:antiquewhite;
+
+        }
+    </style>
+<body>
+    <section class="text-center">
+        <h1 style="color:white">Welcome</h1>
+        <form action="/html/tags/html_form_tag_action.cfm" method="post">
+            <div>
+<textarea name="comments" id="comments" style="font-family:'Franklin Gothic';font-size:1.2em;">
+What's On Your Mind?'
+</textarea>
+            </div>
+            <input type="submit" value="Post It!">
+        </form>
+    </section>
+</body>
